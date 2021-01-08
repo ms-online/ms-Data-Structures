@@ -1,23 +1,16 @@
-const strings = ['a', 'b', 'c', 'd']
-// //    0    1    2    3    4   5
-// // 4*4 =16 存储的字节
+let user = {
+  age: 25,
+  name: 'Summer',
+  sex: 'Female',
+  sayHello: function () {
+    console.log('大家好！')
+  },
+}
 
-// // console.log(strings[2]) //O(1)
+// console.log(user.age) O(1)
+// console.log(user.name) O(1)
 
-// //push
-// strings.push('e') //O(1) O(n)
+// user.email = 'test@example.com' O(1)
+console.log(user)
 
-// //pop
-// strings.pop()
-// strings.pop() //O(1)
-
-// //unshift
-// strings.unshift('x') //O(n)
-
-// //splice
-// strings.splice(2, 0, 'y') //O(n)
-// console.log(strings)
-
-// C++
-// int a[20];
-// int b[5] {1, 2, 3, 4, 5}
+//哈希碰撞的大O符号：O(n/k) --> O(n)
