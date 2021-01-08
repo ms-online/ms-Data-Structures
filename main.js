@@ -1,16 +1,8 @@
-let user = {
-  age: 25,
-  name: 'Summer',
-  sex: 'Female',
-  sayHello: function () {
-    console.log('大家好！')
-  },
-}
+const basket = ['apples', 'grapes', 'pears']
 
-// console.log(user.age) O(1)
-// console.log(user.name) O(1)
+// 链表：apples --> grapes --> pears
 
-// user.email = 'test@example.com' O(1)
-console.log(user)
-
-//哈希碰撞的大O符号：O(n/k) --> O(n)
+// apples
+// 8947 --> grapes
+//           8742 --> pears
+//                     372 --> null
